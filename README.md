@@ -236,7 +236,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Juliano Alves**
 
 - GitHub: [@julianoalvescode](https://github.com/julianoalvescode)
-- Website: [onicloth.com](https://onicloth.store/)
+- Website: [onicloth.store](https://onicloth.store/)
 
 ## 🙏 Acknowledgments
 
