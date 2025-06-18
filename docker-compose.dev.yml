@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  app-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+      args:
+        - HUSKY=0 # Disable husky in Docker
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+      - /app/.husky # Exclude husky from volume mount
+    environment:
+      - NODE_ENV=development
+      - NEXT_TELEMETRY_DISABLED=1
+      - HUSKY=0 # Disable husky in container
+    command: npm run docker-dev
+    profiles:
+      - dev
+
+networks:
+  default:
+    name: onicloth-network-dev

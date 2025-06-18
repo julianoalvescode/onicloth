@@ -1,0 +1,7 @@
+# Husky configuration file
+# This file is used to configure Husky behavior
+
+# Disable husky when HUSKY=0 environment variable is set
+if [ "$HUSKY" = "0" ]; then
+  exit 0
+fi 
